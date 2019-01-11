@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (5.0.0.beta.1)
+  - SkeletonView (1.4.1)
   - SwiftChart (1.0.1)
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0.beta.1)
+  - SkeletonView
   - SwiftChart
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - SkeletonView
     - SwiftChart
 
 SPEC CHECKSUMS:
   Alamofire: 2ef6d6c984c5d21c366e9b41a9ae7dfee2b67a44
+  SkeletonView: 60d6ce7edb0cb4c7758db33c74add50392b3c475
   SwiftChart: ba767a678d568a5ee22d419e146a0582865e1aff
 
-PODFILE CHECKSUM: 250d7d258cd407c9d56462718b263b1dc789c43a
+PODFILE CHECKSUM: ebcddf9a0c3d64643ab82a736be75b1a5fc1d5c4
 
 COCOAPODS: 1.5.3

@@ -26,6 +26,5 @@ extension Date {
 func dateDelegate(length: Int) -> [String] {
     formatter.dateFormat = "dd-MM-yyyy"
     let dateArray = Date().allDates(till: date, duration: length)
-    print(dateArray)
     return dateArray
 }

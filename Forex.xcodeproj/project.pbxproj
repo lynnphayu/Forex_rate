@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		90110E8C21DC923A00EAFB62 /* Pods_Forex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 291A345E399D020389926BEF /* Pods_Forex.framework */; };
+		907EB91121E75569009DFA8C /* RecentCurrencyRateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907EB91021E75569009DFA8C /* RecentCurrencyRateTableViewCell.swift */; };
 		90A6E4DF21DB87EA00F7E1B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A6E4DE21DB87EA00F7E1B0 /* AppDelegate.swift */; };
 		90A6E4E121DB87EA00F7E1B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A6E4E021DB87EA00F7E1B0 /* ViewController.swift */; };
 		90A6E4E421DB87EA00F7E1B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A6E4E221DB87EA00F7E1B0 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		291A345E399D020389926BEF /* Pods_Forex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Forex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B743C30A8A088A6A708943 /* Pods-Forex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Forex.release.xcconfig"; path = "Pods/Target Support Files/Pods-Forex/Pods-Forex.release.xcconfig"; sourceTree = "<group>"; };
+		907EB91021E75569009DFA8C /* RecentCurrencyRateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCurrencyRateTableViewCell.swift; sourceTree = "<group>"; };
 		90A6E4DB21DB87EA00F7E1B0 /* Forex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Forex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A6E4DE21DB87EA00F7E1B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90A6E4E021DB87EA00F7E1B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				90A6E4F621DBDE2E00F7E1B0 /* dateDelegate.swift */,
 				90F96B9C21DC092800C70E7A /* CurrencyTableViewController.swift */,
 				90E4AE6C21DCCD7E00EB03C7 /* RecentExchangeRateViewController.swift */,
+				907EB91021E75569009DFA8C /* RecentCurrencyRateTableViewCell.swift */,
 			);
 			path = Forex;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Forex/Pods-Forex-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftChart/SwiftChart.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -189,6 +193,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkeletonView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftChart.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,6 +233,7 @@
 				90E4AE6D21DCCD7E00EB03C7 /* RecentExchangeRateViewController.swift in Sources */,
 				90A6E4E121DB87EA00F7E1B0 /* ViewController.swift in Sources */,
 				90A6E4F321DB89FE00F7E1B0 /* ApiHandler.swift in Sources */,
+				907EB91121E75569009DFA8C /* RecentCurrencyRateTableViewCell.swift in Sources */,
 				90A6E4F721DBDE2E00F7E1B0 /* dateDelegate.swift in Sources */,
 				90A6E4DF21DB87EA00F7E1B0 /* AppDelegate.swift in Sources */,
 				90F96B9F21DC178900C70E7A /* CurrencyTableViewCell.swift in Sources */,

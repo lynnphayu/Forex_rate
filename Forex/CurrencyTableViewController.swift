@@ -84,7 +84,7 @@ class CurrencyTableViewController: UIViewController, UITableViewDataSource, UITa
         
         let cellIdentifier = "CurrencyCell"
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? CurrencyTableViewCell  else {
-            fatalError("The dequeued cell is not an instance of MusicCell.")
+            fatalError("The dequeued cell is not an instance of CurrencyCell.")
         }
         let currency = Array(data.keys)[indexPath.row]
         cell.currencyTitle.text = currency

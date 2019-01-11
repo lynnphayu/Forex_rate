@@ -18,6 +18,13 @@ var bankNames = [
     "AYA" : "https://forexio.herokuapp.com/aya"
 ]
 
+var bankNamesLocal = [
+    "KBZ" : "http://localhost:8888/kbz",
+    "CB" : "http://localhost:8888/cb",
+    "MAB" : "http://localhost:8888/mab",
+    "AYA" : "http://localhost:8888/aya"
+]
+
 func getCBMForexRate(completion:@escaping (_ result: [String:Double])->Void, dateArray: [String], currency: String) {
     
     var forexRateArray: [String: Double] = [:]
@@ -55,16 +62,16 @@ func getCBMForexRate(completion:@escaping (_ result: [String:Double])->Void, dat
         }
 }
 
-func getExchangeRateFromSpecificBank(bankName:String, completion: @escaping (_ result: [String:Any])->Void) {
+func getExchangeRateFromSpecificBank(bankName:String, completion: @escaping (_ result: NSDictionary)->Void) {
     
-    AF.request(bankNames[bankName]!)
+    AF.request(bankNamesLocal[bankName]!)
         .responseJSON{ response in
             var statusCode = response.response?.statusCode
             let resultData = response.result.value
             switch response.result {
             case .success:
                 let exchangeRates = resultData as! NSDictionary
-                completion(exchangeRates as! [String : Any])
+                completion(exchangeRates)
                 
             case .failure(let error):
                 statusCode = error._code // statusCode private
